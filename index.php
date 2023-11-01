@@ -7,22 +7,14 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-require_once(__DIR__ . '/controller/Connection.php');
+require_once(__DIR__ . '/Connection.php');
 
-
-$conn = new Connection ;
-$conn->connect();
-if (isset($_SESSION['user'])) {
-    echo "<br/>";
-    echo "\n \n  no se ha logueado";
-    session_start();
-    $_SESSION['user'] = "lola";
+$conn = (new Connection) -> connect();
+if (!($conn->connect_errno)) {
+    header("location: principal");
+    die();
 } else {
-    global $_SESSION;
-    echo "<br/>";
-    echo "\n \n   se ha logueado";
-    echo  $_SESSION['user'] ?? "HOlA";
-    echo DIRECTORY_SEPARATOR;
+    echo "error en la conexion";
 }
 ?>
 

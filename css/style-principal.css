@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opciones{
+    height: 8em;
+    background: rgb(99, 178, 237);
+    display: flex;
+    gap: 20em;
+    align-items: center;
+    place-content: center;
+}
+#icono{
+    width: 8em;
+    height: 8em;
+    padding-top: 0.1em;
+}
+.opciones p{
+    cursor: pointer;
+    color: white;
+}
+a{
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    background: rgb(149, 205, 228);
+}
+.bloque{
+    display: flex;
+    gap: 1.5em;
+}
+main{
+    text-align: center;
+    background: rgb(199, 192, 207);
+}
+.contenido {
+    padding: 5em;
+    gap: 2em;
+    display: grid;
+    font-size: 1.2em;
+    font-family: 'Kite One', sans-serif;
+}
+.presentacion img{
+    width: 23em;
+    height: 25em;
+}
+.presentacion{
+    gap: 2em;
+    display: flex;
+    padding: 3em;
+}
+.presentacion p{
+    font-family: 'Kite One', sans-serif;
+    font-family: 'Rampart One', sans-serif;
+    font-size: 1.3em;
+    padding-bottom: 2em;
+}
+.presentacion span{
+    font-family: 'Kite One', sans-serif;
+}
+.fin{
+    display: flex;
+    height: 5em;
+    align-items: center;
+    place-content: center;
+    background: rgb(99, 178, 237);
+    font-size: 3em;
+    gap: 3em;
+    font-family: 'Kite One', sans-serif;
+}
+#icon img{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    place-items: center;
+}
+.redes{
+    display: flex;
+    gap: 0.3em;
+}
+.redes img{
+    color: white;
+    width: 0.8em;
+    height: 0.8em;
+}

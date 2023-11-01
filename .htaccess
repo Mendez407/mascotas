@@ -1,3 +1,4 @@
+options all -indexes
 ErrorDocument 404  /mascotas/404.php
 ErrorDocument 403 /mascotas/403.php
 
@@ -11,4 +12,4 @@ ErrorDocument 403 /mascotas/403.php
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.*)$ $1.html  
-    </IfModule>
+</IfModule>

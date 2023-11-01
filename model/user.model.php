@@ -1,6 +1,6 @@
 <?php
 
-class user
+class User
 {
     public int $id;
     public string $name;
@@ -9,5 +9,5 @@ class user
     public string  $password;
     public string $photo;
 }
-
+?>
 
