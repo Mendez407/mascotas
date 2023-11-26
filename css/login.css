@@ -4,32 +4,26 @@
     box-sizing: border-box;
 }
 .titulo{
-    display: flex;
-    place-content: center;
-}
-.titulo img{
-    width: 8em;
-    height: 8em;
+    display: grid;
+    gap: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 body{
-    height: 100vh;
-    background-image: url("imagenes/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("/imagenes/mas.jpg");
     display: flex;
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }
 .formulario{
-
-    background: rgba(243, 239, 239, 0.3);
-    box-shadow: 0.6px 8px 8px 2px rgba(0, 0, 0, 0.6);
-    padding: 3em 4em 4em 3em;
+    background: rgba(43, 42, 42, 0.486);
+    box-shadow: 0.6px 0.4px 9px 5px rgba(0, 0, 0, 0.815);
+    padding: 6em 4em 2em 4em;
     border-radius: 1em;
     display: grid;
     gap: 2em;
-    margin-top: 2em;
-    align-items: center;
+    margin-top: 3em;
 }                                                               
 .formulario p{
     font-size: 2em;
@@ -37,17 +31,24 @@ body{
     place-content: center;
     font-family: 'Courier New', Courier, monospace;
 }
+.formulario input{
+    outline: none;
+}
+form{
+    display: grid;
+    gap: 1em;
+}
 #barra{
-    width: 23em;
-    height: 3em;
+    width: 25.5em;
+    height: 3.5em;
     border: none;
-    padding-left: 1em;
-    cursor: pointer;
-    border-bottom: 0.1em solid black;
+    padding-left: 3em;
+    border-radius: 1em;
+    background: rgba(248, 248, 248, 0.548);
 }
 .ingreso_login{
     display: grid;
-    gap: 1.5em;
+    gap: 1em;
 }
  #icono{
     width: 2em;
@@ -59,7 +60,7 @@ body{
 .login{
     background: rgba(5, 101, 153, 0.947);
     border: none;
-    width: 25.5em;
+    border-radius: 1em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 3em;
     color: white;
@@ -68,4 +69,17 @@ body{
 .login:focus,
 .login:hover{
     background: rgb(39, 174, 219);
+}
+i{
+    position: absolute;
+    font-size: 2em;
+    padding: 0.1em;
+}
+.botones{
+    margin-top: 3em;
+    display: grid;
+    gap: 1em;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
 }

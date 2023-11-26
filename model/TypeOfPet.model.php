@@ -2,9 +2,7 @@
 
 class TypeOfPet
 {
-    public int $Id;
-    public string $Name;
-    public int $AgeEquivalentYoung;
-    public int $AgeEquivalentAdult;
-    public int $AgeAdult;
+    public int $id;
+    public string $name;
+
 }

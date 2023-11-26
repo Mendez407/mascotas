@@ -3,30 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-.titulo{
-    display: flex;
-    place-content: center;
-}
-.titulo img{
-    width: 8em;
-    height: 8em;
-}
+
 body{
-    background-image: url("imagenes/fon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("/imagenes/f.jpg");
     display: flex;
+    background-size: cover;
+
+}
+.titulo{
+    display: grid;
+    gap: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 .formulario{
     margin: auto;
-    background: rgba(243, 239, 239, 0.3);
-    box-shadow: 0.6px 8px 8px 2px rgba(0, 0, 0, 0.6);
-    padding: 3em 4em 4em 3em;
+    box-shadow: 0.6px 0.4px 9px 5px rgba(0, 0, 0, 0.6);
+    padding: 3em 3em 2em 3em;
     border-radius: 1em;
     display: grid;
     gap: 2em;
-    margin-top: 2em;
-    align-items: center;
+    margin-top: 3em;
+}
+.formulario input{
+    outline: none;
 }
 .formulario p{
     font-size: 2em;
@@ -34,28 +34,26 @@ body{
     place-content: center;
     font-family: 'Courier New', Courier, monospace;
 }
-#barra{
-    width: 23em;
-    height: 3em;
-    border: none;
-    padding-left: 1em;
-    cursor: pointer;
-    border-bottom: 0.1em solid black;
-}
-.ingreso_login{
+form{
     display: grid;
-    gap: 1.5em;
+    gap: 1em;
+    
 }
- #icono {
-    width: 2em;
-    height: 2em;
+#barra,#barra2{
+    height: 2.6em;
+    border: none; 
+    padding-left: 4em;
+    border-radius: 1em;
+    background: rgba(248, 248, 248, 0.041);
 }
-.iconos{
-    display: flex;
+#barra2{
+    width: 25.5em;
 }
+
 .login{
     background: rgba(5, 101, 153, 0.947);
     border: none;
+    border-radius: 1em;
     width: 25.5em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 3em;
@@ -68,7 +66,40 @@ body{
 }
 .messageRegister{
     text-align:center; 
-    padding:.4vh; 
+    padding:.4em; 
     background-color:aquamarine;
-    border-radius: .1vh;
+    border-radius: 1em;
+}
+i{
+    position: absolute;
+    font-size: 1.8em;
+    padding: 0.2em;
+}
+.MessageRegister{
+    text-align:center; 
+    padding: 0.2em 1.3em 0.2em 1.3em; 
+    color: white;
+    background-color:rgb(240, 15, 15);
+    border-radius: 1em;
+    position: absolute;
+    margin: 24em 0em 0em 7em;
+}
+.iconos{
+    display: flex;
+    gap: 5em;
+    padding-top: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.icon{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    
+}
+.icon input{
+    width: 1.5em;
+    height: 1.5em;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
 }

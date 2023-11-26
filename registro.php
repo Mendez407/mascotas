@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VETERINARIA.COM</title>
     <link rel="stylesheet" href="css/style-registro.css">
     <link rel="icon" href="imagenes/icono.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
 
+<body>
     <section class="formulario">
         <?php
-            require_once __DIR__."/procesos/validacion_registro.php";
-
+        require_once __DIR__ . "/procesos/validacion_registro.php";
         ?>
-        <div >
-            <div class="titulo">
-            <img src="imagenes/icono.jpg" alt="">
-            </div>
+        <div class="titulo">
             <p>BIENVENIDO</p>
             <hr>
+
         </div>
         <form method="post" action="">
-        <div class="iconos">
-            <img src="imagenes/user.jpg" alt="" id="icono">
-            <input type="text" name="user" placeholder="User" id="barra" required>
-        </div>
+            <div>
+                <i class='bx bxs-user'></i>
+                <input type="text" name="user" placeholder="User" id="barra2" required>
+            </div>
 
-        <div class="iconos">
-            <img src="imagenes/user.jpg" alt="" id="icono">
-            <input type="text" name="username" placeholder="Username" id="barra" required>
-        </div>
-        <div class="iconos">
-            <img src="imagenes/correo.jpg" alt="" id="icono">
-            <input type="email" name="email" placeholder="email" id="barra" required>
-        </div>
-        <div class="iconos">
-            <img src="imagenes/password.jpg" alt="" id="icono">
-            <input type="password" name="password" placeholder="Password" id="barra" required>
-        </div>
-        
-        <div class="ingreso_login">
-            <input type="submit" name="boton_login" value="REGISTRARSE" class="login">
-        </div>
-    
+            <div>
+                <i class='bx bxs-user'></i>
+                <input type="text" name="username" placeholder="Username" id="barra2" required>
+            </div>
+            <div>
+                <i class='bx bxl-gmail'></i>
+                <input type="email" name="email" placeholder="Email" id="barra2" required>
+            </div>
+            <div>
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" name="password" placeholder="Password" id="barra2" required>
+            </div>
+            <div class="iconos">
+                <div class="icon">
+                    <i class='bx bxs-user-account'></i>
+
+                </div>
+                <!-- <div class="icon">
+                    <label for="rol1">User</label>
+                    <input type="radio" name="rol" placeholder="Rol" id="rol1" required>
+                    <label for="rol2">Administrador</label>
+                    <input type="radio" name="rol" placeholder="Rol" id="rol2" required>
+                </div> -->
+
+
+            </div>
+
+
+            <div class="ingreso_login">
+                <input type="submit" name="boton_login" value="REGISTRARSE" class="login">
+            </div>
+
         </form>
 
     </section>
 
 </body>
+
 </html>
 
 <?php
 require_once __DIR__ . "/vendor/autoload.php";
+
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
