@@ -58,6 +58,7 @@
             </select>
 
             <div class="ingreso_login">
+                <input type="hidden" name="user_id" value="<?php $_SESSION['id'] ?>">
                 <input type="submit" name="boton_login" value="REGISTRARSE" class="login">
             </div>
 
@@ -100,7 +101,7 @@
                     }
                     foreach ($users as $user) {
                         if ($datos->user_id == $user->id) {
-                            $nombre_user = $raza->name;
+                            $nombre_user = $user->name;
                             break;
                         }
                     }

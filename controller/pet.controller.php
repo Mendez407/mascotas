@@ -12,7 +12,7 @@ class pet_Controller{
 
         $name  = $modelpet -> name = $tod-> real_escape_string($_POST['name']);
         $date  = $modelpet -> BirthDate =  ($_POST['date']);
-        $id_user = $_SESSION['id'];
+        $id_user =($_SESSION['user_id']);
         $id_tipo =$modelpet -> tipomascota_id = ($_POST['tipo']);
         $id_raza = $modelpet -> raza_id = ($_POST['raza']);
         
@@ -25,6 +25,7 @@ class pet_Controller{
         // if   {
         // echo "<div class='messageRegister'>Registro creado con exito</div>";
         // }
+        
         $tod -> close();
         // }
         // else {
@@ -34,7 +35,7 @@ class pet_Controller{
     }
 
     public function read() {
-        session_start();
+        // session_start();
         $mysqli = (new Connection);
         $mysqli = $mysqli->connect();
         $array = [];

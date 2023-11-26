@@ -12,21 +12,24 @@ if (isset($_POST['login_button'])) {
         $userName = $mysqli->real_escape_string($_POST['username']);
         $userPassword = $mysqli->real_escape_string($_POST['passwordUser']);
 
-        $sql = "SELECT * FROM user WHERE username = '$userName'";
+        $sql = "SELECT id,username,password FROM user WHERE username = '$userName'";
         $result = $mysqli->query($sql);
-        $cont= mysqli_fetch_array($result);
+        $cont=$result->fetch_object();
 
         if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
+
+            
             // $hashedPassword = $row['password'];
 
             $verify = password_verify($userPassword, $cont['password']);
 
             if ($verify) {
                 // session_start();
-                $_SESSION['id'] = $cont['id'];
-                $_SESSION['username'] = $cont['username'];
-
+                $_SESSION["authenticated"] = true;
+                $_SESSION['id'] = $cont->id;
+                $_SESSION['username'] = $cont->username;
+                echo $_SESSION['id'];
+                echo $_SESSION['username'];
                 header("location:sesion-user.php");
             } else {
                 echo "ACCESO DENEGADO";

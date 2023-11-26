@@ -15,7 +15,9 @@
 <header>
     <div class="header">
         <?php 
+            session_start();
             require_once __DIR__."/procesos/validacion_inicio.php";
+            echo $_SESSION['id'];
         ?>
         <img src="/imagenes/icono.jpg" alt="">
         <div>
