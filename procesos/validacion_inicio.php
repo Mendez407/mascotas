@@ -23,7 +23,7 @@ if (isset($_POST['login_button'])) {
             $verify = password_verify($userPassword, $cont['password']);
 
             if ($verify) {
-                session_start();
+                // session_start();
                 $_SESSION['id'] = $cont['id'];
                 $_SESSION['username'] = $cont['username'];
 
@@ -39,11 +39,3 @@ if (isset($_POST['login_button'])) {
 if (isset($_POST["boton_login"])) {
     header("location:registro.php");
 }
- // $result = $mysqli -> query($sqlpassword);
-    // if(mysqli_num_rows($result) > 0){        
-    //     echo "<div style='text-align:center; padding:.4vh; background-color:red;'>Datos en uso</div>";
-    // }else{
-
-    //     $modelUser = new user;
-    //     (new User_Controller) -> create($modelUser);
-    // }

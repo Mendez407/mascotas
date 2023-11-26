@@ -14,6 +14,11 @@
     <section class="formulario">
         <?php
         require_once __DIR__ . "/procesos/validacion_registro.php";
+        session_start();
+        if(isset($_SESSION["username"])){
+            header("location: principal.php");
+            exit;
+        }
         ?>
         <div class="titulo">
             <p>BIENVENIDO</p>

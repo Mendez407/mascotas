@@ -39,29 +39,18 @@
                     <p>Ingreso de mascota</p>
                 </div>
                 <div>
-                    <a href="crud.php"><i class='bx bxs-injection' style='color:#ffffff'  ></i></i></a>
+                    <a href="crud.php"><i class='bx bxs-injection' style='color:#ffffff'  ></i></a>
                     <p>Agregar Vacunas</p>
+                </div>
+                <div>
+                <a href="close_session.php"><i class='bx bx-window-close' style='color:#f1ebeb'  ></i></a>
+                    <p>Cerrar sesion</p>
                 </div>
                 
             </div>
         </div>
     
 </header>
-<main>
-    
-    <!-- <section class="menu">
-        
-    </section> -->
-    <!-- <section class="info">
-        <img src="/imagenes/ingreso-mascota.jpg" alt="">
-        <div class="info_parrafo">
-            <p>ESPERAMOS QUE NUESTROS SERVICIOS SEAN DE GRAN AYUDA PARA EL BIENESTAR DE SUS PELUDOS</p>
-            <span>AMIGOS FELICES</span>
-            <p>ESTA PRESTO PARA AYUDARTE</p>
-        </div>
-    </section> -->
-
-</main>
 
 <script src="main.js"></script>
 </body>
